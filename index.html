@@ -104,7 +104,6 @@
   }
   .hero h1{
     font-size:clamp(2.6rem, 5.2vw, 4.1rem);
-    font-style:italic;
     font-weight:500;
     line-height:1.05;
     letter-spacing:-0.01em;
@@ -112,7 +111,7 @@
   }
   .hero h1 span{color:var(--clay);}
   .hero p.lede{
-    font-size:1.14rem; color:var(--plum-soft); max-width:480px; margin-bottom:34px;
+    font-size:1.12rem; color:var(--plum-soft); max-width:500px; margin-bottom:34px;
   }
   .hero-ctas{display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-bottom:38px;}
   .btn-primary{
@@ -139,7 +138,7 @@
     padding:14px 14px 46px;
     border-radius:6px;
     box-shadow:0 30px 60px -22px rgba(74,59,87,0.45), 0 2px 10px rgba(74,59,87,0.12);
-    transform:rotate(-3deg);
+    transform:rotate(-2deg);
     max-width:360px;
     width:100%;
   }
@@ -160,18 +159,9 @@
   }
   .s1{top:6%; left:-6%;}
   .s2{bottom:12%; right:-8%;}
-  .badge-float{
-    position:absolute; bottom:-22px; left:-30px;
-    background:var(--paper); border:1px solid var(--paper-edge);
-    padding:14px 18px; border-radius:14px;
-    box-shadow:0 14px 30px -14px rgba(74,59,87,0.35);
-    font-size:0.82rem; font-weight:700; max-width:190px;
-    transform:rotate(3deg);
-  }
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr; text-align:left;}
     .hero-photo-wrap{margin-top:20px;}
-    .badge-float{display:none;}
   }
 
   /* ---------- section shared ---------- */
@@ -285,7 +275,7 @@
   .gallery-track{
     display:flex; gap:20px; width:max-content;
     transform:translateX(0);
-    animation: gallery-scroll 18s linear infinite;
+    animation: gallery-scroll 24s linear infinite;
     animation-play-state:paused;
     will-change:transform;
   }
@@ -386,9 +376,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">🌱 Psicóloga · Abordagem Gestáltica</div>
-        <h1>Um espaço de <span>contato genuíno</span> para você se encontrar.</h1>
-        <p class="lede">Sou a Ana, psicóloga formada pela Universidade Federal do Acre. Acredito que é no encontro verdadeiro com o outro que a vida acontece de forma mais plena — e estou aqui para caminhar com você até lá.</p>
+        <div class="eyebrow">Psicóloga · Gestalt-terapia</div>
+        <h1>Um espaço de <span>presença</span> para você se ouvir com mais clareza.</h1>
+        <p class="lede">Sou a Ana, psicóloga formada pela Universidade Federal do Acre. Atendo com uma escuta próxima, ética e sem pressa, para que você possa falar do que vive com mais liberdade.</p>
         <div class="hero-ctas">
           <a class="btn-primary" href="https://wa.me/556892059250?text=Oi%2C%20Ana!%20Quero%20agendar%20minha%20primeira%20sessão." target="_blank" rel="noopener">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z" fill="currentColor"/></svg>
@@ -397,8 +387,8 @@
           <a class="btn-secondary" href="#gestalt">O que é Gestalt-terapia →</a>
         </div>
         <div class="trust-row">
-          <span><span class="dot"></span>Atendimento online e presencial</span>
-          <span><span class="dot"></span>Grupo Fenexis de pesquisa</span>
+          <span><span class="dot"></span>Online e presencial</span>
+          <span><span class="dot"></span>Fenexis de pesquisa</span>
           <span><span class="dot"></span>Formação pela UFAC</span>
         </div>
       </div>
@@ -407,11 +397,10 @@
         <figure class="polaroid">
           <div class="tape"></div>
           <img src="assets/foto-160.jpg" alt="Ana Maria, psicóloga, sorrindo">
-          <figcaption>oi, eu sou a Ana :)</figcaption>
+          <figcaption>oi, eu sou a Ana</figcaption>
         </figure>
         <span class="sticker-star s1">✦</span>
         <span class="sticker-star s2">✦</span>
-        <div class="badge-float">"Estarei disposta a caminhar com você, te aguardo."</div>
       </div>
     </div>
   </section>
@@ -425,8 +414,8 @@
       </div>
       <div>
         <div class="kicker">Sobre a Ana</div>
-        <h2 class="section-title">Uma trajetória construída no contato com pessoas.</h2>
-        <p class="section-lede">Ao longo da graduação, fui encontrada pela Gestalt-terapia — foi amor à primeira supervisão — e desde então venho construindo uma prática de escuta cuidadosa, ética e verdadeiramente presente.</p>
+        <h2 class="section-title">Uma trajetória construída no contato com pessoas de verdade.</h2>
+        <p class="section-lede">Na graduação, a Gestalt-terapia me encontrou cedo e ficou. Desde então, venho amadurecendo uma prática de escuta cuidadosa, ética e atenta ao que aparece na relação.</p>
 
         <ul class="credential-list">
           <li>
@@ -440,7 +429,7 @@
             <div class="cred-icon">🌀</div>
             <div>
               <div class="cred-title">Abordagem em Gestalt-terapia</div>
-              <div class="cred-desc">Terapia do contato, da relação e do encontro genuíno.</div>
+              <div class="cred-desc">Terapia do contato, da relação e do que surge no encontro.</div>
             </div>
           </li>
           <li>
@@ -468,8 +457,8 @@
       <div class="philosophy">
         <div class="philosophy-inner">
           <div class="kicker">O que guia meu trabalho</div>
-          <blockquote>"É comum chamar a Gestalt-terapia de <em>terapia do contato</em>, da relação — e eu acredito muito nisso. É no contato genuíno com o outro, com o ambiente, comigo mesma, que a vida acontece de uma maneira plena."</blockquote>
-          <div class="signoff">— Ana Maria, sobre sua abordagem terapêutica</div>
+          <blockquote>"Para mim, a Gestalt-terapia é o trabalho de estar presente no que acontece agora. É no contato com o outro, com o ambiente e comigo mesma que muita coisa ganha forma."</blockquote>
+          <div class="signoff">— Ana Maria</div>
         </div>
       </div>
     </div>
@@ -480,24 +469,24 @@
     <div class="wrap">
       <div class="how-head">
         <div class="kicker" style="text-align:center;">Como funciona</div>
-        <h2 class="section-title" style="margin:0 auto 16px;">Dar o primeiro passo pode ser simples.</h2>
-        <p class="section-lede">Sei que procurar terapia nem sempre é fácil. Por isso, deixei o caminho até aqui o mais leve possível.</p>
+        <h2 class="section-title" style="margin:0 auto 16px;">Dar o primeiro passo pode ser mais leve do que parece.</h2>
+        <p class="section-lede">Se quiser iniciar, o processo é direto e sem formalidade desnecessária.</p>
       </div>
       <div class="steps">
         <div class="step-card">
           <span class="step-num">1</span>
           <h3>Chame no WhatsApp</h3>
-          <p>Me conte um pouco sobre o que te trouxe até aqui — sem compromisso, sem pressa.</p>
+          <p>Você me conta o que está procurando e eu respondo com as informações que fizerem sentido para você.</p>
         </div>
         <div class="step-card">
           <span class="step-num">2</span>
-          <h3>Combinamos o melhor formato</h3>
-          <p>Definimos juntas horário e modalidade: sessões online ou presenciais, do jeito que fizer sentido pra você.</p>
+          <h3>Combinamos formato e horário</h3>
+          <p>Definimos juntas a modalidade da terapia e o melhor horário para começar.</p>
         </div>
         <div class="step-card">
           <span class="step-num">3</span>
-          <h3>Começamos a caminhar juntas</h3>
-          <p>A partir da primeira sessão, construímos um espaço só seu — de escuta, contato e cuidado.</p>
+          <h3>Começamos o processo</h3>
+          <p>A partir da primeira sessão, construímos um espaço de escuta, vínculo e cuidado contínuo.</p>
         </div>
       </div>
     </div>
@@ -507,8 +496,8 @@
   <section class="modality" id="atendimento">
     <div class="wrap">
       <div class="kicker">Atendimento</div>
-      <h2 class="section-title">Onde e como você preferir.</h2>
-      <p class="section-lede" style="margin-bottom:44px;">Ofereço sessões online, de qualquer lugar, e atendimento presencial — para quem sente que precisa daquele encontro cara a cara.</p>
+      <h2 class="section-title">Online ou presencial, conforme a sua rotina.</h2>
+      <p class="section-lede" style="margin-bottom:44px;">Atendo online, de qualquer lugar, e presencialmente para quem prefere o encontro cara a cara.</p>
       <div class="modality-grid">
         <div class="mode-card">
           <div class="mode-icon">💻</div>
@@ -531,8 +520,8 @@
     <div class="wrap">
       <div class="gallery-head">
         <div class="kicker">Um pouco de mim</div>
-        <h2 class="section-title">Além do consultório.</h2>
-        <p class="section-lede">Amo tirar fotos de paisagens, do pôr do sol, de qualquer coisa que eu sinta que é bonita — e o Natal é, sem dúvida, minha época favorita do ano.</p>
+        <h2 class="section-title">Fora da clínica, eu também observo o que me toca.</h2>
+        <p class="section-lede">Gosto de fotografar paisagens, céu aberto e detalhes tranquilos do dia. O Natal continua sendo a minha época favorita do ano.</p>
       </div>
       <div class="gallery-strip">
         <div class="gallery-track">
@@ -558,11 +547,11 @@
     <div class="wrap">
       <div class="kicker">Vamos começar?</div>
       <img class="final-photo" src="assets/foto-87.jpg" alt="Ana Maria">
-      <h2 class="section-title">Estou disponível para ser sua psi.</h2>
-      <p class="section-lede">Quando você se sentir pronto, estarei aqui — disposta a caminhar com você. Me chama no WhatsApp e vamos combinar o seu primeiro passo.</p>
+      <h2 class="section-title">Se fizer sentido para você, me chama.</h2>
+      <p class="section-lede">Quando quiser começar, estarei aqui para combinar seu primeiro passo com calma e clareza.</p>
       <a class="whats-btn" href="https://wa.me/556892059250?text=Oi%2C%20Ana!%20Quero%20iniciar%20meu%20acompanhamento%20terapêutico." target="_blank" rel="noopener">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z" fill="#fff"/></svg>
-        Te aguardo, chama no WhatsApp
+        Chamar no WhatsApp
       </a>
       <div class="microcopy">Resposta em até 24h · Sigilo profissional garantido</div>
     </div>
@@ -586,7 +575,7 @@
 
 <div class="sticky-cta">
   <a href="https://wa.me/556892059250?text=Oi%2C%20Ana!%20Quero%20agendar%20minha%20primeira%20sessão." target="_blank" rel="noopener">
-    💬 Falar com a Ana
+    Falar com a Ana
   </a>
 </div>
 
